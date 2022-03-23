@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p>hello world!</p>
+    <input type="text" id="url">
     <button onclick="jump()">btn</button>
     <script>
-        window.onload = location.href = 'weixin://app/wx82d43fee89cdc7df/jumpWxa/?userName=gh_1ac06b5a8f4e'
+        /*window.onload = location.href = 'weixin://app/wx82d43fee89cdc7df/jumpWxa/?userName=gh_1ac06b5a8f4e'*/
         function jump(){
-            location.href = 'weixin://app/wx82d43fee89cdc7df/jumpWxa/?userName=gh_1ac06b5a8f4e'
+            location.href = document.getElementById("url").value;
         }
     </script>
 </body>
